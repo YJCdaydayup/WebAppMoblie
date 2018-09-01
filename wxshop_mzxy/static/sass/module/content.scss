@@ -1,5 +1,113 @@
 @charset "UTF-8";
 
 .productul {
-  background-color: red;
+  width: 99%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: 45px;
+  left: 0;
+  ul {
+    width: 100%;
+  }
+
+  li:first-child {
+    margin-top: 24px;
+  }
+
+  li {
+    margin: 10px;
+    min-height: 125px;
+    overflow: hidden;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px  #ccc;
+    box-shadow: 0 0 5px #ccc;
+  }
+  // 由于整个是可以点击的，最外层放a标签即可
+  a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    .triangle-topleft {
+      width: 0;
+      height: 0;
+      border: 30px solid #1aa818;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      z-index: 990;
+      cursor: pointer;
+      position: absolute;
+    }
+
+    .rexiao {
+      border: 30px solid red;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+
+    .xiangou {
+      border: 30px solid orange;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+
+    .shuxing {
+      display: block; // 只有这种模式才能旋转
+      font-size: 14px;
+      color: white;
+      position: relative;
+      top: 3px;
+      left: 8px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      width: 40px;
+      height: 40px;
+      z-index: 1000;
+      position: absolute;
+    }
+    .leftimage {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      img {
+        width: 100px;
+        birder: 0;
+      }
+    }
+    .productcontent {
+      width: 64px;
+      width: calc(100% - 100px);// 兼容写法
+      float: right;
+      height: 100px;
+      margin-top: 20px;
+      position: relative;
+      padding-left: 5px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .ptitle {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Macrosoft YaHei";
+      }
+      .pdes {
+        font-size: 13px;
+        color: #999;
+        margin-top: 5px;
+      }
+      .pprice {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #4a4a4a;
+      }
+    }
+  }
 }

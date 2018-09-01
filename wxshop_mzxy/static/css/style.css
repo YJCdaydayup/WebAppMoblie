@@ -125,7 +125,8 @@ li {
   width: 100%;
   height: 200px;
   color: white;
-  font-size: 12px; }
+  font-size: 12px;
+  margin-bottom: -45px; }
   .indexslider .swiper-slide {
     position: relative; }
     .indexslider .swiper-slide img {
@@ -163,6 +164,93 @@ li {
         font-size: 18px; }
 
 .productul {
-  background-color: red; }
+  width: 99%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: 45px;
+  left: 0; }
+  .productul ul {
+    width: 100%; }
+  .productul li:first-child {
+    margin-top: 24px; }
+  .productul li {
+    margin: 10px;
+    min-height: 125px;
+    overflow: hidden;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px  #ccc;
+    box-shadow: 0 0 5px #ccc; }
+  .productul a {
+    display: block;
+    overflow: hidden;
+    position: relative; }
+    .productul a .triangle-topleft {
+      width: 0;
+      height: 0;
+      border: 30px solid #1aa818;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      z-index: 990;
+      cursor: pointer;
+      position: absolute; }
+    .productul a .rexiao {
+      border: 30px solid red;
+      border-right-color: transparent;
+      border-bottom-color: transparent; }
+    .productul a .xiangou {
+      border: 30px solid orange;
+      border-right-color: transparent;
+      border-bottom-color: transparent; }
+    .productul a .shuxing {
+      display: block;
+      font-size: 14px;
+      color: white;
+      position: relative;
+      top: 3px;
+      left: 8px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      width: 40px;
+      height: 40px;
+      z-index: 1000;
+      position: absolute; }
+    .productul a .leftimage {
+      width: 100px;
+      height: 100px;
+      display: inline-block; }
+      .productul a .leftimage img {
+        width: 100px;
+        birder: 0; }
+    .productul a .productcontent {
+      width: 64px;
+      width: calc(100% - 100px);
+      float: right;
+      height: 100px;
+      margin-top: 20px;
+      position: relative;
+      padding-left: 5px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .productul a .productcontent p {
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .productul a .productcontent .ptitle {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Macrosoft YaHei"; }
+      .productul a .productcontent .pdes {
+        font-size: 13px;
+        color: #999;
+        margin-top: 5px; }
+      .productul a .productcontent .pprice {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #4a4a4a; }
 
 /*# sourceMappingURL=style.css.map */
