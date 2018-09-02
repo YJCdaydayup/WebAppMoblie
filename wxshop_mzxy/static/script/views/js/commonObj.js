@@ -61,24 +61,6 @@ define(function () {
                 }
             });
         },
-        /*
-         <section class="productul" id="productul">
-         <ul>
-         <li>
-         <a href="#">
-         <div class="triangle-topleft"></div>
-         <span class="shuxing" data_url="productinfo.html">专属</span>
-         <div class="leftimage">
-         <canvas data-src="images/product/product1.png"></canvas>
-         </div>
-         <div class="productcontent">
-         <p class="ptitle pl10">广联达变更算量</p>
-         <p class="pdes pl10">这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
-         <p class="pprice pl10">价格: <span class="green">$5000</span></p>
-         </div>
-         </a>
-         </li>
-         */
         insertData: function () {
             var ul = $('#productul ul');
             var data = [1,2,3,4,5];
