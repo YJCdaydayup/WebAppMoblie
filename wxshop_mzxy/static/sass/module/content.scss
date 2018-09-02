@@ -73,9 +73,11 @@
       width: 100px;
       height: 100px;
       display: inline-block;
-      img {
+      canvas {
         width: 100px;
-        birder: 0;
+        min-height: 100px;
+        background: #fff url("../images/loading.gif") center center no-repeat;
+        background-size: 15px auto;
       }
     }
     .productcontent {

@@ -223,9 +223,11 @@ li {
       width: 100px;
       height: 100px;
       display: inline-block; }
-      .productul a .leftimage img {
+      .productul a .leftimage canvas {
         width: 100px;
-        birder: 0; }
+        min-height: 100px;
+        background: #fff url("../images/loading.gif") center center no-repeat;
+        background-size: 15px auto; }
     .productul a .productcontent {
       width: 64px;
       width: calc(100% - 100px);
