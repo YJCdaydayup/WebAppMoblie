@@ -1,0 +1,5 @@
+可以学习一下
+1.进入xampp的文件目录，进入etc，http.conf,设置监听的端口 Listen 80
+2.在extra中httpd-vhosts.conf配置域名
+
+

@@ -4,8 +4,12 @@
 // 常用的函数
 
 // 这里编写模块，不依赖任何模块时参数可以只是require
-define(function (require) {
-    return {
+// 返回一个对象 就是当前模块对象
+define(function () {
+    return commonObj = {
+        ajaxstatus: true,
+        pagesize: 5,
+        currentPage: 0,
         loadCanvas: function () {
             var imgLength = $("#productul").find('canvas').length;
             if (imgLength > 0) {
@@ -32,6 +36,68 @@ define(function (require) {
                     }
                 });
             }
+        },
+        getData: function (pagenumber) {
+            $.ajax({
+                type: 'get',
+                url: "http://localhost/wxshop_mzxy/static/script/test.json",
+                data: {
+                    page: pagenumber,
+                    row: commonObj.pagesize // 也可以使用this
+                },
+                dataType: 'json',
+                success: function (result) {
+                    // 隐藏加载框
+                    if (result.length > 0) {
+                        alert(result);
+                    }                },
+                beforeSend: function () {
+                    // $(.loaddiv) 展示加载框
+                },
+                error: function () {
+                    // 隐藏加载框
+                    // alert('failed'); 假设成功了
+                    commonObj.insertData();
+                }
+            });
+        },
+        /*
+         <section class="productul" id="productul">
+         <ul>
+         <li>
+         <a href="#">
+         <div class="triangle-topleft"></div>
+         <span class="shuxing" data_url="productinfo.html">专属</span>
+         <div class="leftimage">
+         <canvas data-src="images/product/product1.png"></canvas>
+         </div>
+         <div class="productcontent">
+         <p class="ptitle pl10">广联达变更算量</p>
+         <p class="pdes pl10">这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p>
+         <p class="pprice pl10">价格: <span class="green">$5000</span></p>
+         </div>
+         </a>
+         </li>
+         */
+        insertData: function () {
+            var ul = $('#productul ul');
+            var data = [1,2,3,4,5];
+            var html = "";
+            for (var i=0;i<data.length;i++) {
+                html += '<li><a href="#"><div class="triangle-topleft"></div><span class="shuxing" data_url="productinfo.html">专属</span>' + '<div class="leftimage">' + '<canvas data-src="images/product/product1.png"></canvas>' + '</div>' + '<div class="productcontent">'+ '<p class="ptitle pl10">广联达变更算量</p><p class="pdes pl10">这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介</p><p class="pprice pl10">价格: <span class="green">$5000</span></p></div></a> </li>';
+            }
+            commonObj.ajaxstatus = true;
+            ul.append(html);
+            this.loadCanvas();// 这个方法一定要调用，加载出图片的
+        },
+        scrollHandler: function () {
+            var pageH = $(document).height();
+            var scrollT = $(window).scrollTop();
+            var winHeight = $(window).height();
+            if (parseInt(scrollT) + parseInt(winHeight) + 50 > parseInt(pageH) && commonObj.ajaxstatus) {
+                commonObj.ajaxstatus = false;
+                commonObj.currentPage ++;
+                commonObj.insertData();
+            }
         }
-
     }});
