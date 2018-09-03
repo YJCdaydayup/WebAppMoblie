@@ -14,7 +14,8 @@ textarea {
   resize: none; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /**10 ÷ 16 × 100% = 62.5%    1rem = 10px   **/ }
 
 body {
   background-color: #f6f6f6; }
@@ -291,73 +292,32 @@ li {
 */
 .recommendcontent {
   width: 99%;
-  overflow: hidden;
-  margin: 5rem auto 0.5rem auto; }
+  margin: 6rem auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 1rem; }
   .recommendcontent ul {
-    width: 100%; }
-    .recommendcontent ul li {
-      min-height: 12.5rem;
-      overflow: hidden;
-      background-color: #fff;
-      -webkit-box-shadow: 0 0 0.5rem #ccc;
-      -moz-box-shadow: 0 0 0.5rem #ccc;
-      box-shadow: 0 0 0.5rem #ccc;
-      border: 1px solid #f2f2f2;
-      margin: 1rem; }
-    .recommendcontent ul .buynumsli {
-      min-height: 5rem;
-      margin-top: -1rem;
-      -moz-border-radius-bottomleft: 1rem;
-      border-bottom-left-radius: 1rem;
-      -moz-border-radius-bottomright: 1rem;
-      border-bottom-right-radius: 1rem; }
-      .recommendcontent ul .buynumsli .buylabel {
-        font-size: 1.4rem;
-        float: left;
-        margin: 1.5rem 0.2rem 0rem 1rem;
-        font-family: "Microsoft YaHei"; }
-      .recommendcontent ul .buynumsli .buynuminput {
-        float: left;
-        overflow: hidden;
-        margin: 1.2rem 0 0 0.5rem; }
-        .recommendcontent ul .buynumsli .buynuminput .reduce {
-          float: left;
-          width: 3.5rem;
-          height: 2.5rem;
-          border: 0.1rem solid #ccc;
-          border-right: none;
-          cursor: pointer;
-          background: url("../images/reduce.gif") center center no-repeat; }
-        .recommendcontent ul .buynumsli .buynuminput .itnums {
-          float: left;
-          width: 8rem;
-          height: 2.5rem;
-          border: 0.1rem solid #ccc;
-          text-align: center;
-          font-size: 1.4rem;
-          color: #990000;
-          font-weight: 800; }
-        .recommendcontent ul .buynumsli .buynuminput .add {
-          float: left;
-          width: 3.5rem;
-          height: 2.5rem;
-          border: 0.1rem solid #ccc;
-          border-left: none;
-          cursor: pointer;
-          background: url("../images/add.gif") center center no-repeat; }
+    width: 100%;
+    height: 18rem; }
     .recommendcontent ul .setyuanjiao {
-      -moz-border-radius-topleft: 1rem;
+      background-color: #ffffff;
+      width: 100%;
+      height: 13rem;
       border-top-left-radius: 1rem;
-      -moz-border-radius-topright: 1rem;
-      border-top-right-radius: 1rem; }
+      border-top-right-radius: 1rem;
+      -webkit-box-shadow: 0 0 1rem #ccc;
+      -moz-box-shadow: 0 0 1rem #ccc;
+      box-shadow: 0 0 0.5rem #ccc;
+      border: 1px solid #f2f2f2; }
+      .recommendcontent ul .setyuanjiao a {
+        float: left; }
       .recommendcontent ul .setyuanjiao .leftimages {
         width: 30%;
-        height: 10rem;
-        margin-top: 0.5rem;
-        min-width: 10rem; }
+        margin-top: 1rem; }
         .recommendcontent ul .setyuanjiao .leftimages img {
-          width: 100px;
-          border: 0; }
+          width: 8rem;
+          height: auto; }
       .recommendcontent ul .setyuanjiao .productcontent {
         width: 58%;
         margin-top: 1rem; }
@@ -376,55 +336,36 @@ li {
           margin-top: 1rem;
           font-size: 1.4rem;
           color: #4a4a4a; }
-  .recommendcontent .decorations {
-    olor: #b6b6b6;
-    overflow: hidden;
-    background-color: #e7e7e7;
-    -webkit-box-shadow: 0 0 0.5rem #ccc;
-    -moz-box-shadow: 0 0 0.5rem #ccc;
-    box-shadow: 0 0 0.5rem #ccc;
-    border: 0.1rem solid #ccc;
-    margin: 1rem;
-    padding: 1.5rem;
-    -moz-border-radius: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 5rem; }
-    .recommendcontent .decorations .dtitle {
-      color: #939494;
-      font-size: 1.4rem;
-      font-family: "Microsoft YaHei";
-      font-weight: bold;
-      margin-bottom: 10px; }
-    .recommendcontent .decorations p {
-      text-indent: 2em;
-      line-height: 2.3rem; }
-    .recommendcontent .decorations img {
-      border: 0;
-      width: 100%; }
-
-.addcart {
-  width: 100%;
-  left: 0px;
-  position: fixed;
-  bottom: 0px;
-  z-index: 10000;
-  margin: 0 auto;
-  display: block; }
-  .addcart .addcartbtn {
-    width: 98%;
-    background-color: #28c728;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#18b218), to(#28c728));
-    background-image: -webkit-linear-gradient(top, #18b218, #28c728);
-    background-image: linear-gradient(to bottom, #18b218, #28c728);
-    display: block;
-    text-align: center;
-    height: 4rem;
-    line-height: 4rem;
-    border: 0.1rem solid #31b231;
-    border-radius: 0.5rem;
-    color: #fff;
-    font-size: 1.6rem;
-    cursor: pointer;
-    margin: 0 auto; }
+    .recommendcontent ul .buynumsli {
+      border: 1px solid #f2f2f2;
+      width: 100%;
+      height: 4rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background-color: #ffffff;
+      -webkit-box-shadow: 0 0 1rem #ccc;
+      -moz-box-shadow: 0 0 1rem #ccc;
+      box-shadow: 0 0 0.5rem #ccc; }
+      .recommendcontent ul .buynumsli .buylabel {
+        float: left;
+        padding: 1rem;
+        font-size: 1.4rem; }
+      .recommendcontent ul .buynumsli .buynuminput {
+        float: left;
+        width: 10rem;
+        height: 60%;
+        line-height: 60%;
+        margin-top: 0.8rem;
+        border: 1.5px solid #ddd; }
+        .recommendcontent ul .buynumsli .buynuminput .reduce {
+          display: inline-block;
+          width: 3rem; }
+        .recommendcontent ul .buynumsli .buynuminput .itnums {
+          width: 4rem;
+          border-left: 1px solid #ddd;
+          border-right: 1px solid #ddd; }
+        .recommendcontent ul .buynumsli .buynuminput .add {
+          display: inline-block;
+          width: 3rem; }
 
 /*# sourceMappingURL=style.css.map */
