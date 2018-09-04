@@ -8,6 +8,7 @@ html {font-size: 62.5%; /**10 ÷ 16 × 100% = 62.5%    1rem = 10px   **/}
 body{background-color: #f6f6f6;}
 .clear{height:1px;overflow:hidden;clear:both;}
 a,img{border:0;}
+input{-webkit-appearance: none;}
 a{color: #666;text-decoration: none;&:hover{color:#0053a6;};}
 li{list-style-type:none;}
 .fl{float:left;}

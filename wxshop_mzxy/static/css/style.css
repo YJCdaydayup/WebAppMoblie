@@ -28,6 +28,9 @@ body {
 a, img {
   border: 0; }
 
+input {
+  -webkit-appearance: none; }
+
 a {
   color: #666;
   text-decoration: none; }
@@ -185,7 +188,8 @@ li {
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 5px #ccc;
     -moz-box-shadow: 0 0 5px  #ccc;
-    box-shadow: 0 0 5px #ccc; }
+    box-shadow: 0 0 5px #ccc;
+    padding-bottom: 1rem; }
   .productul a {
     display: block;
     overflow: hidden;
@@ -236,7 +240,6 @@ li {
       width: 64px;
       width: calc(100% - 100px);
       float: right;
-      height: 100px;
       margin-top: 20px;
       position: relative;
       padding-left: 5px;
@@ -259,37 +262,6 @@ li {
         font-size: 14px;
         color: #4a4a4a; }
 
-/*
-
-<section class="recommendcontent">
-    <ul>
-        <li class="setyuanjiao">
-            <a class="leftimages fl mt15"><img src="images/product/product1.png" /></a>
-            <a  class="productcontent fl mt15">
-                <p class="ptitle pl10">广联达变更算量</p>
-                <p class="pdes pl10">简介这里简介这里简介这里简介这里简介这里简介这里简介这里简介介这里简介</p>
-                <p class="pprice pl10">价格：<span class="green">￥5000</span></p>
-            </a>
-        </li>
-        <li class="buynumsli">
-            <div class="buylabel">购买数量：</div>
-            <div class="buynuminput">
-                <div class="reduce"  ></div>
-                <input type="number"  class="itnums" name="qty_item_1"  value="1"   />
-                <div class="add" ></div>
-            </div>
-        </li>
-    </ul>
-
-    <div class="decorations">
-        <div class="dtitle">详细说明</div>
-        <p>详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明详细说明</p>
-        <img src="images/product/product1.png" />
-
-    </div>
-
-</section>
-*/
 .recommendcontent {
   width: 99%;
   margin: 6rem auto;
@@ -337,35 +309,98 @@ li {
           font-size: 1.4rem;
           color: #4a4a4a; }
     .recommendcontent ul .buynumsli {
-      border: 1px solid #f2f2f2;
+      border: 0.1rem solid #f2f2f2;
       width: 100%;
-      height: 4rem;
+      height: 4.5rem;
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
       background-color: #ffffff;
       -webkit-box-shadow: 0 0 1rem #ccc;
       -moz-box-shadow: 0 0 1rem #ccc;
-      box-shadow: 0 0 0.5rem #ccc; }
+      box-shadow: 0 0 0.5rem #ccc;
+      padding-top: 0.1rem; }
       .recommendcontent ul .buynumsli .buylabel {
         float: left;
         padding: 1rem;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        margin-top: 0.3rem; }
       .recommendcontent ul .buynumsli .buynuminput {
         float: left;
-        width: 10rem;
-        height: 60%;
+        width: 15rem;
+        height: 2.6rem;
         line-height: 60%;
         margin-top: 0.8rem;
-        border: 1.5px solid #ddd; }
+        border: 1px solid #ccc;
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: "Microsoft YaHei";
+        font-weight: bolder;
+        text-shadow: 0 0 0.05rem gray; }
         .recommendcontent ul .buynumsli .buynuminput .reduce {
           display: inline-block;
-          width: 3rem; }
+          width: 3rem;
+          position: relative;
+          top: -0.2rem; }
         .recommendcontent ul .buynumsli .buynuminput .itnums {
-          width: 4rem;
-          border-left: 1px solid #ddd;
-          border-right: 1px solid #ddd; }
+          outline: none;
+          width: 7.5rem;
+          height: 2.6rem;
+          border: 1.2px solid #ccc;
+          text-align: center;
+          position: relative;
+          top: -0.1rem;
+          font-size: 1.4rem;
+          color: #990000;
+          font-weight: 800;
+          border-radius: 0 !important; }
         .recommendcontent ul .buynumsli .buynuminput .add {
           display: inline-block;
-          width: 3rem; }
+          width: 3rem;
+          position: relative;
+          top: -0.2rem; }
+
+.decorations {
+  background-color: #e7e7e7;
+  margin: 1.1rem auto;
+  border-radius: 1rem;
+  min-height: 15rem;
+  padding: 1.3rem 1.4rem; }
+  .decorations .dtitle {
+    width: 100%;
+    color: #939494;
+    font-size: 1.4rem;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .decorations p {
+    text-indent: 1rem;
+    line-height: 2rem; }
+  .decorations img {
+    border: 0;
+    width: 100%; }
+
+.addcart {
+  position: fixed;
+  bottom: 0;
+  height: 4rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  text-align: center; }
+  .addcart .addcartbtn {
+    width: 98%;
+    background-color: #28c728;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#18b218), to(#28c728));
+    background-image: -webkit-linear-gradient(top, #18b218, #28c728);
+    background-image: linear-gradient(to bottom, #18b218, #28c728);
+    display: block;
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    border: 0.1rem solid #31b231;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
