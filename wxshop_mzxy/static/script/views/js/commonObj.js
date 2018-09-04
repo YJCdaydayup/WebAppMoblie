@@ -61,6 +61,7 @@ define(function () {
                 }
             });
         },
+
         insertData: function () {
             var ul = $('#productul ul');
             var data = [1,2,3,4,5];
@@ -72,6 +73,7 @@ define(function () {
             ul.append(html);
             this.loadCanvas();// 这个方法一定要调用，加载出图片的
         },
+
         scrollHandler: function () {
             var pageH = $(document).height();
             var scrollT = $(window).scrollTop();
@@ -81,5 +83,37 @@ define(function () {
                 commonObj.currentPage ++;
                 commonObj.insertData();
             }
+        },
+
+        // 添加数量
+        addNums: function () {
+            var currentNum = parseInt($(this).prev().val());
+            if (!isNaN(currentNum)) {
+                currentNum ++;
+            }else {
+                currentNum = 1;
+
+            }
+            $(this).prev().val(currentNum);
+        },
+
+        // 减少数量
+        reduceNums: function () {
+            var currentNum = parseInt($(this).next().val());
+            if (!isNaN(currentNum)) {
+                currentNum --;
+                if (currentNum <= 1) {
+                    currentNum = 1;
+                }
+            }else {
+                currentNum = 1;
+            }
+            $(this).next().val(currentNum);
+        },
+
+        addCarts: function (e) {
+            // 阻止冒泡
+            e.stopPropagation();
+            // 获取
         }
     }});

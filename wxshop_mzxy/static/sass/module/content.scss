@@ -188,6 +188,7 @@
           width: 3rem;
           position: relative;
           top: -0.2rem;
+          cursor: pointer;
         }
         .itnums {
           outline: none;
@@ -205,6 +206,7 @@
           width: 3rem;
           position: relative;
           top: -0.2rem;
+          cursor: pointer;
         }
       }
     }
@@ -247,7 +249,9 @@
     color: #fff;
     font-size: 1.6rem;
     cursor: pointer;
-    margin:0 auto;}
+    margin:0 auto;
+    background-color: red;
+  }
 }
 
 

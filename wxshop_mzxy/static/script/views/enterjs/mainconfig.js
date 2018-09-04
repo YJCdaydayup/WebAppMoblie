@@ -18,4 +18,9 @@ require(['jquery','swiper','commonObj'],function($,swiper,commonObj){
     commonObj.loadCanvas(); // 初次显示在界面上的图片，此方法只会调用一次
     $(window).scroll(commonObj.scrollHandler);
     $("#productul").on("touchmove", commonObj.scrollHandler);
+
+    // 产品详情
+    $("#addNums").on('click',commonObj.addNums);
+    $("#reduceNums").on('click',commonObj.reduceNums);
+    $("#addcart").on('click',commonObj.addCarts);
 });

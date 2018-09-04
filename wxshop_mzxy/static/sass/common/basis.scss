@@ -65,7 +65,13 @@ li{list-style-type:none;}
 			a{
 				span{background-position: -51px -46px;}
 				.active{background-position: -51px 0;}
-				
+				#shoppingCar {
+					width: 1.6rem;
+					height: 1.6rem;
+					border-radius: 0.8rem;
+					background-color: red;
+					color: #ffffff;
+				}
 			}
 		}
 	}

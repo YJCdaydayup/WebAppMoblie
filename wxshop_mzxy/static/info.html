@@ -17,8 +17,10 @@
 <nav id="nav">
     <ul class="navlist">
         <li id="n_0"><a href="index.html"><span class="active"></span></a></li>
-        <li id="n_1"><a href="usercenter.html" ><span></span></a></li>
-        <li id="n_2"><a href="cart.html" ><span></span></a></li>
+        <li id="n_1"><a href="usercenter.html" ><span>
+            <div id="shoppingCar">1</div>
+        </span></a></li>
+        <li id="n_2"><a href="info.html" ><span></span></a></li>
         <li id="n_3"><a href="productlist.html" ><span></span></a></li>
     </ul>
 </nav>
@@ -36,9 +38,9 @@
         <li class="buynumsli">
             <div class="buylabel">购买数量：</div>
             <div class="buynuminput">
-                <div class="reduce">-</div>
-                <input type="number"  class="itnums" name="qty_item_1"  value="1"   />
-                <div class="add" >+</div>
+                <div class="reduce" id="reduceNums">-</div>
+                <input type="number"  class="itnums" name="qty_item_1"  value="1"  id="productNums" />
+                <div class="add" id="addNums">+</div>
             </div>
         </li>
     </ul>
@@ -52,7 +54,7 @@
 </section>
 
 <section class="addcart">
-    <input type="button" class="addcartbtn" value="加入购物车" />
+    <input type="button" class="addcartbtn" value="加入购物车" id="addCart" />
 </section>
 
 <script src="script/libs/require.js" data-main="script/views/enterjs/mainconfig"></script>
