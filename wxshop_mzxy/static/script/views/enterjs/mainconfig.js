@@ -22,5 +22,5 @@ require(['jquery','swiper','commonObj'],function($,swiper,commonObj){
     // 产品详情
     $("#addNums").on('click',commonObj.addNums);
     $("#reduceNums").on('click',commonObj.reduceNums);
-    $("#addcart").on('click',commonObj.addCarts);
+    $("#addCart").on('click',commonObj.addCarts);
 });

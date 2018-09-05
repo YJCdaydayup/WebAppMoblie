@@ -114,6 +114,51 @@ define(function () {
         addCarts: function (e) {
             // 阻止冒泡
             e.stopPropagation();
-            // 获取
+            // 获取购物车数量
+            var car = $("#shoppingCar");
+            var carCurNum = Number(car.text());
+            // 获取输入框数量
+            var inputNum = Number($("#productNums").val());
+            // // 修改购物车数量
+            // car.text(carCurNum + inputNum);
+            // 获取产品坐标(相对于document)
+            var x = $("#productId").offset().left;
+            var y = $("#productId").offset().top;
+            // 获取导航购物车按钮的位置
+            var X = $("#n_1").offset().left;
+            var Y = $("#n_1").offset().top;
+            // 获取图片的src
+            var imgSrc = $("#productId").children('img').attr('src');
+            var flyObj = $("obj");
+            if (flyObj.length <= 0) {
+                var img = $("<img/>",{
+                    width: "100",
+                    height: "100",
+                    src: imgSrc
+                });
+                var div = $("<div/>",{
+                     id: "obj"
+                }).append(img);
+                $("body").append(div);
+            }
+
+            $("#obj").css({
+                left: X,
+                top: Y
+            });
+
+            // var $obj=$('#obj');
+            // if(!$obj.is(':animated')){
+            //     $obj.css({'left': x,'top': y}).animate({'left': X,'top': Y-80},500,function() {
+            //         $obj.stop(false, false).animate({'top': Y-20,'opacity':0},500,function(){
+            //             $obj.fadeOut(300,function(){
+            //                 $obj.remove();
+            //                 // var num=Number($(".cartnums").text());
+            //                 // $(".cartnums").text(num+number);
+            //                 // $(".cartnums").show();
+            //             });
+            //         });
+            //     });
+            // };
         }
     }});
