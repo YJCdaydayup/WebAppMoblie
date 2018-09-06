@@ -6,6 +6,7 @@
 // 这里编写模块，不依赖任何模块时参数可以只是require
 // 返回一个对象 就是当前模块对象
 define(function () {
+    // 这里就返回字面量对象，下面调用的时候，直接使用commonObj即可，以防出现this错误
     return commonObj = {
         ajaxstatus: true,
         pagesize: 5,
@@ -156,9 +157,23 @@ define(function () {
                             obj.remove();
                             // // 修改购物车数量
                             car.text(carCurNum + inputNum);
+                            commonObj.changeCarSize(car);
+                            if (Number(car.text()) < 1) {
+                                car.hide();
+                            }
                         });
                     })
                 });
+            }
+        },
+        changeCarSize: function (car) {
+            var text = car.text();
+            if (text > 99) {
+                car.css({
+                    width: "3rem"
+                });
+            }else {
+                car.css("width","2rem");
             }
         }
     }});

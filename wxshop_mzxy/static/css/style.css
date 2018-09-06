@@ -128,11 +128,13 @@ li {
     #nav .navlist #n_1 a .active {
       background-position: -51px 0; }
     #nav .navlist #n_1 a #shoppingCar {
-      width: 1.6rem;
-      height: 1.6rem;
-      border-radius: 0.8rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 1rem;
+      text-align: center;
       background-color: red;
-      color: #ffffff; }
+      color: #ffffff;
+      margin-left: 2.5rem; }
 
 .indexslider {
   width: 100%;

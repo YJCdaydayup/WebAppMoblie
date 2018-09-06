@@ -66,11 +66,13 @@ li{list-style-type:none;}
 				span{background-position: -51px -46px;}
 				.active{background-position: -51px 0;}
 				#shoppingCar {
-					width: 1.6rem;
-					height: 1.6rem;
-					border-radius: 0.8rem;
+					width: 2rem;
+					height: 2rem;
+					border-radius: 1rem;
+					text-align: center;
 					background-color: red;
 					color: #ffffff;
+					margin-left: 2.5rem;
 				}
 			}
 		}
