@@ -176,6 +176,20 @@ li {
         color: white;
         font-size: 18px; }
 
+/**
+ 1.offset获取的是相对于页面document的坐标(left,top)，如果只是设置offset来确定位置，不需要管position；
+ 2.通过offset获取坐标后，如果要使用css({left:offset.left，top:offset.top})，要设置position:absolute和z-index:10000
+*/
+#obj {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  background: #fff;
+  border: solid 5px #e54144;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10000; }
+
 .productul {
   width: 99%;
   overflow: hidden;
