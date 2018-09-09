@@ -1,0 +1,10 @@
+1.line-height:120% 和 line-height:1.2的区别
+
+line-height: 26px;行高26px
+line-height: 120%,行高是当前字体的120%
+line-height: 2.6em: 行高是当前字体的1.2倍
+line-height: 2.6;行高是当前字体的2.6倍
+
+带单位的行高具有继承性，子元素的行高是父元素计算的的行高
+不带单位的行高直接继承，子元素的行高是自己的字体大小*line-height: 2 
+

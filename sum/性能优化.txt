@@ -1,0 +1,6 @@
+1.将js和css直接写在页面里面，减少http请求的数量
+2.将js和css合并压缩，grunt和require.js
+3.将图片做成雪碧图
+
+4.js优化实战里面
+

@@ -1,0 +1,36 @@
+1.$("form.elements").hide()隐藏form所有元素
+2.$(":radio",document.forms[0]); 获取页面中第一个form的所有单选按钮
+3.$("img").each(function(index,elem){}) 遍历所有img元素，return false,停止循环，return true，进行下一次循环
+4.size(),和length比较像，获取元素个数
+5.$("ul").selector 检测你用什么选择器来查询这个元素
+6.$("ul",document.body).context.nodeName 第二个参数不写默认是document
+7.$("img").get(0);得到匹配的所有元素的第几个，$('img')[0]等价,如果没有输入index，即get()则返回包含所有匹配到的元素的数组
+8.$("li").index(DOM元素或jquery对象)返回其在原先集合li数组中的位置信息，如果index里面是$("li:gt(0)")数组，返回第一个元素在li数组中的位置，如果$("#bar").index('li')传递选择器，就返回#bar在所有li中的位置，找不到返回-1，如果不传递参数,$("#bar").index()，返回#bar在同辈中的索引位置
+9.$('div').data(key,anyTypeValue)在元素上存放数据，如果是集合就对所有元素存放，$(‘div’).data(key)获取，$('div').removeData(key)移除
+10.queue(),获取元素身上的函数队列，一般是动画，正因为queue才能保证函数一个个有序执行，通过queue(fx).lenght获取队列个数，执行一个就少一个，可以在队列末尾添加新函数，$(“#foo”).queue(function(){$$(this).dequeue();// 这个必须的，不然后面的函数不执行})//用dequeue来结束自定义队列函数，并让队列继续进行下去。clearQueue();清空所有队列。
+11.:animated正在执行动画的，contains(text) has(selector)
+12.$('p').eq(index),获取第index个元素，负数就从最后一个(以-1)开始
+13.$('p').first();获取第一个元素 last(),最后一个
+14.$('p').filter(‘.selected’,:first) 返回数组,保留子元素中不含ul的元素:
+    $('p').filter(function(){
+	return $('ul',this).length == 0;	
+    });// 返回数组
+15.map(),把每个元素通过map里面的函数逐个匹配生成的值放入一个数组，最终返回一个jquery数组，通过get()得到常规js数组，再使用join(“，”)拼接
+$("p").map(function(){
+    return $(this).val();
+}).get().join(',');
+
+16.$('li').has(‘ul’)获取含有ul标签的所有li元素
+17.$('p').not($('#select')[0]),获取所有p元素，但不包含id=select的p元素，和filter相反
+18.$('p').slice(0,1),从第0个开始，到第一个但不包括第一个，后面是开区间
+   $('p').slice(0,2)，从第0个开始，到index=2，但不包括第三个
+   $('p').slice(1,2),只要第二个元素
+   $('p').slice(-1),最后一个元素
+19.children()获取所有子元素，children('.active')，获取这种子元素
+20.$('p').find('div'),获取p下的所有div
+21.next(),prev()紧跟同级元素 nextAll() prevAll() nextUtil()
+22.parent(【selector】),获取当前元素的父元素
+23.siblings([selector])，兄弟元素
+24.$('p').add(<span>add</span>)获取的p元素中添加一个span元素
+25.$.trim(‘ sis ’);去掉字符串两边的空格
+26.oninput事件取代keyup来监听输入框的变化
