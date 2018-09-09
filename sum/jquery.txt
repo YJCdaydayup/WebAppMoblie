@@ -34,3 +34,4 @@ $("p").map(function(){
 24.$('p').add(<span>add</span>)获取的p元素中添加一个span元素
 25.$.trim(‘ sis ’);去掉字符串两边的空格
 26.oninput事件取代keyup来监听输入框的变化
+27.页面跳转:onclick=“javascript: void(window.location.href)=“orderlies.html””
