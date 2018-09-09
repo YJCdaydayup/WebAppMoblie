@@ -23,4 +23,11 @@ require(['jquery','swiper','commonObj'],function($,swiper,commonObj){
     $("#addNums").on('click',commonObj.addNums);
     $("#reduceNums").on('click',commonObj.reduceNums);
     $("#addCart").on('click',commonObj.addCarts);
+
+    // 购物车
+    $(".addNum").on('click',commonObj.addNums);
+    $(".reduceNum").on('click',commonObj.reduceNums);
+    $('.delete').on('click',commonObj.deleteItem);
+    commonObj.calculateTotalMoney();
+
 });

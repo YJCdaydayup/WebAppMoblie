@@ -93,9 +93,9 @@ define(function () {
                 currentNum ++;
             }else {
                 currentNum = 1;
-
             }
             $(this).prev().val(currentNum);
+            commonObj.reCalculateXiaoji(this);
         },
 
         // 减少数量
@@ -110,6 +110,7 @@ define(function () {
                 currentNum = 1;
             }
             $(this).next().val(currentNum);
+            commonObj.reCalculateXiaoji(this);
         },
 
         addCarts: function (e) {
@@ -174,6 +175,37 @@ define(function () {
                 });
             }else {
                 car.css("width","2rem");
+            }
+        },
+        deleteItem: function () {
+            $(this).parents('.shoppingBox').remove();
+            commonObj.calculateTotalMoney();
+        },
+        // 计算小记
+        reCalculateXiaoji: function (ev) {
+            var $this = $(ev);
+            if ($this.parents('.shoppingBox').length > 0) {
+                var num = $(ev).siblings('.productNum').val(),
+                    sum = Number(num) * 766;
+                $(ev).parents('.shoppingBox').find('.sum-money').text("¥" + sum);
+            }
+            commonObj.calculateTotalMoney();
+        },
+        calculateTotalMoney: function () {
+           var $rel = $('.sum-money').map(function () {
+                return Number($(this).text().split('¥')[1]);
+            }).get();
+            var sum = 0;
+            $.each($rel,function (index,value) {
+                sum += value;
+            })
+            $("#totle-money").text("¥" + sum);
+            if (sum == 0) {
+                $("#rabbit").show();
+                $("#car-footer").hide();
+            }else {
+                $("#rabbit").hide();
+                $("#car-footer").show();
             }
         }
     }});
