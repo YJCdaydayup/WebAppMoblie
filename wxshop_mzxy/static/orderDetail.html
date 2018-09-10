@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes"  />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no">
+    <title>移动端前端实训</title>
+    <link rel="apple-touch-icon-precomposed" href="images/haoroomsicon.jpg" />
+    <link rel="apple-touch-startup-image" href="images/haoroomsicon.jpg" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<nav id="nav">
+    <ul class="navlist">
+        <li id="n_0"><a href="index.html"><span class="active"></span></a></li>
+        <li id="n_1"><a href="usercenter.html" ><span>
+            <div id="shoppingCar">1</div>
+        </span></a></li>
+        <li id="n_2"><a href="info.html" ><span></span></a></li>
+        <li id="n_3"><a href="productlist.html" ><span></span></a></li>
+    </ul>
+</nav>
+
+<section id="order-detail">
+    <div class="manage-title">管理收货地址</div>
+    <ul>
+        <li class="shdz li-common pt20 pl10">
+            <div class="shdz-title">收货人地址</div>
+            <ul>
+                <li class="shdz-detail">
+                    <input type="radio" name="address_options" value="11" checked>
+                    <div class="address-des">
+                        <div>上海市 虹口软件有限公司虹口软件有限公司虹口软件有限公司虹口软件有限公司</div>
+                        <div class="name fl"><strong>姓名: </strong>章某某</div>
+                        <div class="tel-num fl"><strong>手机号码: </strong>13566666666</div>
+                    </div>
+                </li>
+                <li class="shdz-detail">
+                    <input type="radio" name="address_options" value="11">
+                    <div class="address-des">
+                        <div>湖北省 武汉市 虹口软件有限公司虹口软件有限公司虹口软件有限公司虹口软件有限公司</div>
+                        <div class="name fl"><strong>姓名: </strong>nsacaasc某</div>
+                        <div class="tel-num fl"><strong>手机号码: </strong>13523446666</div>
+                    </div>
+                </li>
+                <li class="add-naddress">
+                    <input type="radio" name="address_options" id="add-naddress">
+                    <div>
+                        使用新的收货地址
+                    </div>
+                </li>
+                <li style="display: block" class="add-address-box p10" id="add-address-box">
+                    <div class="sh-name sh-common">
+                        <div>收货人姓名:</div>
+                        <input type="text">
+                    </div>
+                    <div class="sh-dq sh-common">
+                        <div>所在地区:</div>
+                        <select name="sheng"></select>
+                        <select name="shi"></select>
+                        <select name="qu"></select>
+                    </div>
+                    <div class="sh-detail sh-common">
+                        <div>详细地址:</div>
+                        <input type="text">
+                    </div>
+                    <div class="sh-tel sh-common">
+                        <div>电话号码:</div>
+                        <input type="text">
+                    </div>
+                    <div class="auto-save">
+                        <input type="checkbox" class="fl">
+                        <p class="fl">自动保存收货地址( 选择后该地址将会保存到您的收货地址列表 ) </p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="fp-info li-common pt20 pl10">
+            <div class="fp-title">发票信息</div>
+            <div class="control-box">
+                <input type="checkbox" id="createFP"><span class="fp-des">是否开具发票</span>
+            </div>
+            <div class="create-fa p10" id="create-fa" style="display: none">
+                <div class="create-top common">
+                    <div>发票信息</div>
+                    <select name="fp-type" class="fa-type">
+                        <option>普通发票</option>
+                        <option>增值税发票</option>
+                    </select>
+                </div>
+                <div class="create-bottom common">
+                    <div>发票抬头</div>
+                    <select name="fp-taitou" class="fp-taitou">
+                        <option>个人</option>
+                        <option>单位</option>
+                    </select>
+                    <input type="text" class="tt-input">
+                </div>
+            </div>
+        </li>
+        <li class="product-list li-common pt20 pl10">
+            <div class="product-des">商品清单</div>
+            <table class="pro-table" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr class="tr-title">
+                    <td width="50%" class="pro-t">商品名称</td>
+                    <td width="25%" class="pro-t">数量</td>
+                    <td width="25%" class="pro-t">小计</td>
+                </tr>
+                <tr>
+                    <td width="50%" class="pro">商品名称商品名称商品名称</td>
+                    <td width="25%" class="pro">3</td>
+                    <td width="25%" class="pro">500000</td>
+                </tr>
+                <tr>
+                    <td width="50%" class="pro">商品名称商品商品名称商品商品名称商品名称商品名称</td>
+                    <td width="25%" class="pro">3</td>
+                    <td width="25%" class="pro">500000</td>
+                </tr>
+            </table>
+        </li>
+        <li class="leave-msg li-common pt20 pl10">
+            <div class="msg-title">给卖家留言</div>
+            <textarea rows="3" class="msg-area"></textarea>
+        </li>
+    </ul>
+</section>
+<footer id="order-sum">
+    <span>总价： <strong id="order-money">¥200000</strong></span>
+    <div class="submit-order" id="submit-order">提交订单</div>
+</footer>
+
+<script src="script/libs/require.js" data-main="script/views/enterjs/mainconfig"></script>
+</body>
+</html>

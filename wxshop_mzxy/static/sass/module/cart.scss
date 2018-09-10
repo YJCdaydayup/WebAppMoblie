@@ -1,0 +1,199 @@
+.shoppingCart {
+  margin: 6.2rem 1rem;
+  .carBox {
+    margin-top: 1rem;
+    padding-bottom: 0.6rem;
+    background-color: white;
+    border-radius: 0.9rem;
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 0 0 5px #ddd;
+    box-shadow: 0 0 5px #bbb;
+    li {
+      height: 4.5rem;
+      border-bottom: 1px dotted rgba(29,29,29,0.1);
+    }
+    .car-title {
+      padding: 0.2rem 0 0 1.2rem;
+      img {
+        width: 4rem;
+        height: auto;
+      }
+      span {
+        position: relative;
+        top: -1.5rem;
+        left: 1rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+        font-family: "Macrosoft YaHei";
+        color: rgb(102,102,102);
+      }
+    }
+    .carCounts {
+      padding-left: 1.6rem;
+      padding-top: 1.4rem;
+      box-sizing: border-box;
+      span {
+        float: left;
+        font-weight: bold;
+        font-size: 1.4rem;
+        font-family: "Macrosoft YaHei";
+      }
+      .loseNum {
+        float: left;
+        margin-left: 3rem;
+        padding: 0.4rem 1rem;
+        border: 1px solid #cccccc;
+        margin-top: -0.5rem;
+        height: 3rem;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: "Macrosoft YaHei";
+        z-index: 10000;
+      }
+      .numInput {
+        float: left;
+        border: 1px solid #cccccc;
+        height: 3rem;
+        width: 7rem;
+        text-align: center;
+        margin-left: -1px;
+        margin-top: -0.5rem;
+        outline: none;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: darkmagenta;
+      }
+      .addNum {
+        float: left;
+        padding: 0.4rem 1rem;
+        border: 1px solid #cccccc;
+        margin-left: -1px;
+        margin-top: -0.5rem;
+        height: 3rem;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: "Macrosoft YaHei";
+        z-index: 10000;
+      }
+      .loseNum:active,.addNum:active {
+        background-color: #bbb;
+      }
+    }
+    .calculateMoney {
+      padding-left: 1.6rem;
+      padding-top: 1.4rem;
+      box-sizing: border-box;
+      .xiaoji {
+        float: left;
+        font-weight: bold;
+        font-size: 1.4rem;
+        font-family: "Macrosoft YaHei";
+      }
+
+      .sum-money {
+        float: left;
+        margin-left: 3rem;
+        color: #00b500;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .deleteProduct {
+        float: left;
+        margin-left: 2rem;
+        img {
+          width: 1.6rem;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  background-color: #ffffff;
+  bottom: 0;
+  height: 4.5rem;
+  border: 1px solid #aaa;
+  border-color: #aaa transparent #aaa transparent;
+  width: 100%;
+  padding-top: 1.3rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .delete {
+    float: left;
+    width: 2rem;
+    height: auto;
+    margin-left: 1rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .qingkong {
+    float: left;
+    font-size: 1.5rem;
+    font-family: "Macrosoft YaHei";
+    font-weight: bold;
+    color: #007aff;
+    margin-top: 0.2rem;
+  }
+  .totle-title {
+    float: left;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1px;
+    span {
+      font-weight: bold;
+      font-family: "Macrosoft YaHei";
+      color: #00b500;
+    }
+  }
+  .makeDeal {
+    float: right;
+    padding: 0.6rem 2rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    background-color: #00b500;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Macrosoft YaHei";
+    margin-top: -5px;
+    margin-right: 1.5rem;
+    border-radius: 0.2rem;
+  }
+}
+
+.noProduct {
+  text-align: center;
+  img {
+    width: 7rem;
+    height: auto;
+  }
+  p {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ccc;
+    font-family: "Macrosoft YaHei";
+    font-weight: bolder;
+  }
+  input {
+    border: 1px solid #ccc;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    color: gray;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    margin-top: 1.2rem;
+    outline: none;
+  }
+}

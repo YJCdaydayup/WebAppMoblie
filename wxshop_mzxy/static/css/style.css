@@ -28,9 +28,6 @@ body {
 a, img {
   border: 0; }
 
-input {
-  -webkit-appearance: none; }
-
 a {
   color: #666;
   text-decoration: none; }
@@ -74,7 +71,323 @@ li {
   content: '.';
   font-size: 0; }
 
-.jianbian, #nav .navlist, #car-footer {
+.pl10 {
+  padding-left: 1rem; }
+
+.pr10 {
+  padding-right: 1rem; }
+
+.mt15 {
+  margin-top: 1.5rem; }
+
+/*边距*/
+.ma {
+  margin: 0 auto; }
+
+.m0 {
+  margin: 0px; }
+
+.m5 {
+  margin: 5px; }
+
+.m8 {
+  margin: 8px; }
+
+.ml0 {
+  margin-left: 0; }
+
+.m10 {
+  margin: 10px; }
+
+.mt0 {
+  margin-top: 0px; }
+
+.mt2 {
+  margin-top: 2px; }
+
+.mt3 {
+  margin-top: 3px; }
+
+.mt5 {
+  margin-top: 5px; }
+
+.mt6 {
+  margin-top: 6px; }
+
+.mt8 {
+  margin-top: 8px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mt40 {
+  margin-top: 40px; }
+
+.mt50 {
+  margin-top: 50px; }
+
+.mt80 {
+  margin-top: 80px; }
+
+.mt90 {
+  margin-top: 90px; }
+
+.mt100 {
+  margin-top: 100px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.mb8 {
+  margin-bottom: 8px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+.mb50 {
+  margin-bottom: 50px; }
+
+.mb60 {
+  margin-bottom: 60px; }
+
+.ml2 {
+  margin-left: 2px; }
+
+.ml3 {
+  margin-left: 3px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.ml8 {
+  margin-left: 8px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.ml13 {
+  margin-left: 13px; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.ml30 {
+  margin-left: 30px; }
+
+.ml40 {
+  margin-left: 40px; }
+
+.ml50 {
+  margin-left: 50px; }
+
+.ml60 {
+  margin-left: 60px; }
+
+.ml80 {
+  margin-left: 80px; }
+
+.ml70 {
+  margin-left: 70px; }
+
+.ml100 {
+  margin-left: 100px; }
+
+.ml135 {
+  margin-left: 135px; }
+
+.ml300 {
+  margin-left: 300px; }
+
+.ml400 {
+  margin-left: 400px; }
+
+.mr0 {
+  margin-right: 0; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.mr8 {
+  margin-right: 8px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mr30 {
+  margin-right: 30px; }
+
+.mr40 {
+  margin-right: 40px; }
+
+.mr50 {
+  margin-right: 50px; }
+
+.mr100 {
+  margin-right: 100px; }
+
+.mr200 {
+  margin-right: 200px; }
+
+.p5 {
+  padding: 5px; }
+
+.p8 {
+  padding: 8px; }
+
+.p10 {
+  padding: 10px; }
+
+.p15 {
+  padding: 15px; }
+
+.p20 {
+  padding: 20px; }
+
+.p30 {
+  padding: 30px; }
+
+.pt2 {
+  padding-top: 2px; }
+
+.pt3 {
+  padding-top: 3px; }
+
+.pt5 {
+  padding-top: 5px; }
+
+.pt8 {
+  padding-top: 8px; }
+
+.pt10 {
+  padding-top: 10px; }
+
+.pt15 {
+  padding-top: 15px; }
+
+.pt20 {
+  padding-top: 20px; }
+
+.pt30 {
+  padding-top: 30px; }
+
+.pt40 {
+  padding-top: 40px; }
+
+.pt50 {
+  padding-top: 50px; }
+
+.pt70 {
+  padding-top: 70px; }
+
+.pt100 {
+  padding-top: 100px; }
+
+.pb5 {
+  padding-bottom: 5px; }
+
+.pb8 {
+  padding-bottom: 8px; }
+
+.pb10 {
+  padding-bottom: 10px; }
+
+.pb15 {
+  padding-bottom: 15px; }
+
+.pb20 {
+  padding-bottom: 20px; }
+
+.pb30 {
+  padding-bottom: 30px; }
+
+.pb50 {
+  padding-bottom: 50px; }
+
+.pb100 {
+  padding-bottom: 100px; }
+
+.pl1 {
+  padding-left: 1px; }
+
+.pl5 {
+  padding-left: 5px; }
+
+.pl8 {
+  padding-left: 8px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.pl15 {
+  padding-left: 15px; }
+
+.pl20 {
+  padding-left: 20px; }
+
+.pl30 {
+  padding-left: 30px; }
+
+.pl50 {
+  padding-left: 50px; }
+
+.pl100 {
+  padding-left: 100px; }
+
+.pl120 {
+  padding-left: 120px; }
+
+.pr5 {
+  padding-right: 5px; }
+
+.pr8 {
+  padding-right: 8px; }
+
+.pr10 {
+  padding-right: 10px; }
+
+.pr15 {
+  padding-right: 15px; }
+
+.pr20 {
+  padding-right: 20px; }
+
+.pr30 {
+  padding-right: 30px; }
+
+.pr50 {
+  padding-right: 50px; }
+
+.pr100 {
+  padding-right: 100px; }
+
+.jianbian, #nav .navlist, #order-sum {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #eee));
   background: -webkit-linear-gradient(top, #f4f4f4 0, #eee 100%);
   background: linear-gradient(to bottom, #f4f4f4 0, #eee 100%); }
@@ -83,6 +396,29 @@ li {
   border-bottom: solid 1px #B3B3B3;
   -webkit-box-shadow: 0 1px 1px 0 #DFDFDF;
   box-shadow: 0 1px 1px 0 #DFDFDF; }
+
+.BGJIANBIAN, #order-detail .manage-title {
+  width: 100%;
+  background-color: #28c728;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#18b218), to(#28c728));
+  background-image: -webkit-linear-gradient(top, #18b218, #28c728);
+  background-image: linear-gradient(to bottom, #18b218, #28c728);
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #31b231;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px auto; }
+
+.BGJIANBIAN_HOVER, #order-detail .manage-title:hover {
+  background-color: #3ede30;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3ede30), to(#3ede30));
+  background-image: -webkit-linear-gradient(top, #18b218, #3ede30);
+  background-image: linear-gradient(to bottom, #18b218, #3ede30); }
 
 #nav {
   width: 100%;
@@ -428,168 +764,344 @@ li {
     margin: 0 auto;
     background-color: red; }
 
-.CART-FONT, #shoppingCart .shoppingBox .shopping-top span, #shoppingCart .shoppingBox .shopping-mid .count-des, #car-footer .totle-des span, #car-footer .jiesuan {
-  font-family: "Macrosoft YaHei";
-  font-size: 1.4rem;
-  font-weight: bold; }
+.shoppingCart {
+  margin: 6.2rem 1rem; }
+  .shoppingCart .carBox {
+    margin-top: 1rem;
+    padding-bottom: 0.6rem;
+    background-color: white;
+    border-radius: 0.9rem;
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 0 0 5px #ddd;
+    box-shadow: 0 0 5px #bbb; }
+    .shoppingCart .carBox li {
+      height: 4.5rem;
+      border-bottom: 1px dotted rgba(29, 29, 29, 0.1); }
+    .shoppingCart .carBox .car-title {
+      padding: 0.2rem 0 0 1.2rem; }
+      .shoppingCart .carBox .car-title img {
+        width: 4rem;
+        height: auto; }
+      .shoppingCart .carBox .car-title span {
+        position: relative;
+        top: -1.5rem;
+        left: 1rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+        font-family: "Macrosoft YaHei";
+        color: #666666; }
+    .shoppingCart .carBox .carCounts {
+      padding-left: 1.6rem;
+      padding-top: 1.4rem;
+      box-sizing: border-box; }
+      .shoppingCart .carBox .carCounts span {
+        float: left;
+        font-weight: bold;
+        font-size: 1.4rem;
+        font-family: "Macrosoft YaHei"; }
+      .shoppingCart .carBox .carCounts .loseNum {
+        float: left;
+        margin-left: 3rem;
+        padding: 0.4rem 1rem;
+        border: 1px solid #cccccc;
+        margin-top: -0.5rem;
+        height: 3rem;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: "Macrosoft YaHei";
+        z-index: 10000; }
+      .shoppingCart .carBox .carCounts .numInput {
+        float: left;
+        border: 1px solid #cccccc;
+        height: 3rem;
+        width: 7rem;
+        text-align: center;
+        margin-left: -1px;
+        margin-top: -0.5rem;
+        outline: none;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: darkmagenta; }
+      .shoppingCart .carBox .carCounts .addNum {
+        float: left;
+        padding: 0.4rem 1rem;
+        border: 1px solid #cccccc;
+        margin-left: -1px;
+        margin-top: -0.5rem;
+        height: 3rem;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: "Macrosoft YaHei";
+        z-index: 10000; }
+      .shoppingCart .carBox .carCounts .loseNum:active, .shoppingCart .carBox .carCounts .addNum:active {
+        background-color: #bbb; }
+    .shoppingCart .carBox .calculateMoney {
+      padding-left: 1.6rem;
+      padding-top: 1.4rem;
+      box-sizing: border-box; }
+      .shoppingCart .carBox .calculateMoney .xiaoji {
+        float: left;
+        font-weight: bold;
+        font-size: 1.4rem;
+        font-family: "Macrosoft YaHei"; }
+      .shoppingCart .carBox .calculateMoney .sum-money {
+        float: left;
+        margin-left: 3rem;
+        color: #00b500;
+        font-weight: bold;
+        font-size: 1.2rem; }
+      .shoppingCart .carBox .calculateMoney .deleteProduct {
+        float: left;
+        margin-left: 2rem; }
+        .shoppingCart .carBox .calculateMoney .deleteProduct img {
+          width: 1.6rem;
+          height: auto; }
 
-.INPUT_SECTION, #shoppingCart .shoppingBox .shopping-mid .productNum, #shoppingCart .shoppingBox .shopping-mid .reduceNum, #shoppingCart .shoppingBox .shopping-mid .addNum {
+footer {
+  position: fixed;
+  background-color: #ffffff;
+  bottom: 0;
+  height: 4.5rem;
+  border: 1px solid #aaa;
+  border-color: #aaa transparent #aaa transparent;
+  width: 100%;
+  padding-top: 1.3rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 3rem;
-  line-height: 3rem;
-  position: relative;
-  top: -0.5rem;
-  border: 1px solid #bbb;
-  cursor: pointer; }
-
-#shoppingCart {
-  position: relative;
-  top: 50px;
-  margin: 0 1.2rem;
-  padding-bottom: 5rem; }
-  #shoppingCart .shoppingBox {
-    border-radius: 1rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    -webkit-box-shadow: 0 0 5px #bbb;
-    -moz-box-shadow: 0 0 5px #bbb;
-    box-shadow: 0 0 8px #bbb;
-    margin-top: 1.2rem;
-    padding-bottom: 0.6rem; }
-    #shoppingCart .shoppingBox li {
-      width: 100%;
-      height: 4.8rem;
-      border-bottom: 1px dotted #ccc; }
-    #shoppingCart .shoppingBox .shopping-top img {
-      width: 4.2rem;
-      height: auto;
-      vertical-align: middle;
-      margin: 0.1rem auto auto 1rem; }
-    #shoppingCart .shoppingBox .shopping-top span {
-      margin-left: 1rem;
-      display: inline-block;
-      position: relative;
-      top: 0.5rem; }
-    #shoppingCart .shoppingBox .shopping-mid div {
-      float: left;
-      margin-top: 1.6rem; }
-    #shoppingCart .shoppingBox .shopping-mid .productNum {
-      float: left;
-      text-align: center;
-      margin-top: 1.6rem;
-      position: relative;
-      left: -2px;
-      width: 8rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #007aff; }
-    #shoppingCart .shoppingBox .shopping-mid .count-des {
-      margin-left: 1.5rem; }
-    #shoppingCart .shoppingBox .shopping-mid .reduceNum {
-      margin-left: 2rem;
-      padding: 0 1.6rem; }
-    #shoppingCart .shoppingBox .shopping-mid .addNum {
-      position: relative;
-      left: -3px;
-      padding: 0 1.6rem; }
-    #shoppingCart .shoppingBox .shopping-bottom div {
-      float: left;
-      margin-top: 1.6rem; }
-    #shoppingCart .shoppingBox .shopping-bottom .xiaoji {
-      margin-left: 2rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      font-family: "Macrosoft YaHei"; }
-    #shoppingCart .shoppingBox .shopping-bottom .sum-money {
-      margin-left: 2.6rem;
-      font-family: "Macrosoft YaHei";
-      font-size: 1.3rem;
-      font-weight: bolder;
-      color: #00b500; }
-    #shoppingCart .shoppingBox .shopping-bottom .delete {
-      width: 1.8rem;
-      height: 2rem;
-      margin-left: 2rem;
-      cursor: pointer; }
-      #shoppingCart .shoppingBox .shopping-bottom .delete img {
-        width: 100%;
-        height: auto; }
-
-.bottomSetting, #car-footer .clear-up, #car-footer .totle-des {
-  float: left;
-  margin-top: 0.6rem; }
-
-#car-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  border: 1px solid #bbb;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  background-color: #fff;
   box-sizing: border-box; }
-  #car-footer .clear-up {
-    margin-left: 0.3rem; }
-    #car-footer .clear-up img {
-      width: 3rem;
-      height: auto;
-      vertical-align: middle; }
-    #car-footer .clear-up span {
-      font-family: "Macrosoft YaHei";
-      font-size: 1.3rem;
+  footer .delete {
+    float: left;
+    width: 2rem;
+    height: auto;
+    margin-left: 1rem; }
+    footer .delete img {
+      width: 100%;
+      height: auto; }
+  footer .qingkong {
+    float: left;
+    font-size: 1.5rem;
+    font-family: "Macrosoft YaHei";
+    font-weight: bold;
+    color: #007aff;
+    margin-top: 0.2rem; }
+  footer .totle-title {
+    float: left;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1px; }
+    footer .totle-title span {
       font-weight: bold;
-      color: #007aff; }
-  #car-footer .totle-des {
-    margin-left: 2rem;
-    margin-top: 1.2rem;
-    font-size: 1.3rem; }
-    #car-footer .totle-des span {
+      font-family: "Macrosoft YaHei";
       color: #00b500; }
-  #car-footer .jiesuan {
+  footer .makeDeal {
     float: right;
+    padding: 0.6rem 2rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
     background-color: #00b500;
     color: white;
-    padding: 0.5rem 2rem;
-    margin-top: 0.8rem;
-    border-radius: 0.5rem;
-    margin-right: 2rem; }
-
-/*
-	<div id="rabbit">
-		<div class="rabbit-img">
-			<img src="images/cart_pic.png" alt="">
-		</div>
-		<div class="rabbit-des">您还没有宝贝，赶快去逛逛吧</div>
-		<div class="rabbit-button">马上去逛逛</div>
-	</div>
-*/
-#rabbit {
-  position: relative;
-  top: 2rem;
-  text-align: center; }
-  #rabbit .rabbit-img {
-    text-align: center; }
-    #rabbit .rabbit-img img {
-      width: 7rem;
-      height: auto; }
-  #rabbit .rabbit-des {
-    font-size: 1.6rem;
-    font-weight: bolder;
+    font-size: 1.5rem;
+    font-weight: bold;
     font-family: "Macrosoft YaHei";
-    color: #bbb;
-    margin-top: 1rem; }
-  #rabbit .rabbit-button {
+    margin-top: -5px;
+    margin-right: 1.5rem;
+    border-radius: 0.2rem; }
+
+.noProduct {
+  text-align: center; }
+  .noProduct img {
+    width: 7rem;
+    height: auto; }
+  .noProduct p {
     margin-top: 2rem;
-    cursor: pointer;
-    display: inline-block;
-    padding: 1rem 1rem;
-    color: gray;
-    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ccc;
+    font-family: "Macrosoft YaHei";
+    font-weight: bolder; }
+  .noProduct input {
     border: 1px solid #ccc;
-    font-size: 1.3rem; }
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    color: gray;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    margin-top: 1.2rem;
+    outline: none; }
+
+.o-detail-title, #order-detail ul .li-common .shdz-title, #order-detail ul .fp-info .fp-title, #order-detail ul .product-list .product-des, #order-detail ul .leave-msg .msg-title {
+  font-family: "Macrosoft YaHei";
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: gray; }
+
+.o-text-font, #order-detail ul .li-common ul .shdz-detail .address-des, #order-detail ul .li-common ul .add-naddress div {
+  position: relative;
+  top: -4px;
+  left: 5px;
+  font-size: 1.4rem;
+  line-height: 170%;
+  font-family: "Macrosoft YaHei"; }
+
+#order-detail {
+  position: relative;
+  top: 45px;
+  padding-bottom: 60px; }
+  #order-detail .manage-title {
+    width: 99%;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    background-color: #00b500; }
+  #order-detail ul {
+    margin: 0 1rem; }
+    #order-detail ul .li-common {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      -webkit-box-shadow: 0 0 5px #ccc;
+      box-shadow: 0 0 5px #ccc;
+      margin-top: 0.8rem;
+      border-radius: 0.8rem;
+      padding-bottom: 0.8rem; }
+      #order-detail ul .li-common ul {
+        margin: 0 0.5rem 0 auto; }
+        #order-detail ul .li-common ul li {
+          padding-top: 1.1rem;
+          overflow: hidden; }
+        #order-detail ul .li-common ul .shdz-detail {
+          min-height: 3rem;
+          border-bottom: 1px dotted #cccccc; }
+          #order-detail ul .li-common ul .shdz-detail input {
+            float: left;
+            width: 4%; }
+          #order-detail ul .li-common ul .shdz-detail .address-des {
+            float: left;
+            width: 95%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+            #order-detail ul .li-common ul .shdz-detail .address-des .tel-num {
+              margin-left: 1.5rem; }
+        #order-detail ul .li-common ul .add-naddress input {
+          float: left; }
+        #order-detail ul .li-common ul .add-naddress div {
+          float: left;
+          min-height: 1.5rem; }
+        #order-detail ul .li-common ul .add-address-box {
+          background-color: #eee; }
+          #order-detail ul .li-common ul .add-address-box .sh-common {
+            width: 100%;
+            min-height: 6.2rem;
+            font-size: 1.4rem;
+            font-weight: 400; }
+            #order-detail ul .li-common ul .add-address-box .sh-common input {
+              -webkit-appearance: none;
+              margin-top: 0.4rem;
+              box-sizing: border-box;
+              width: 99%;
+              padding: 1rem;
+              border: 1px solid #cccccc;
+              border-radius: 0.4rem; }
+          #order-detail ul .li-common ul .add-address-box .sh-dq select {
+            margin-top: 0.8rem;
+            width: 30%;
+            height: 3.2rem;
+            border: 1px solid #cccccc; }
+          #order-detail ul .li-common ul .add-address-box .auto-save {
+            overflow: hidden;
+            margin-top: 3px; }
+            #order-detail ul .li-common ul .add-address-box .auto-save p {
+              width: 90%;
+              margin-left: 5px;
+              margin-top: -3px;
+              line-height: 150%; }
+    #order-detail ul .fp-info .control-box {
+      margin-top: 5px; }
+      #order-detail ul .fp-info .control-box input[type='checkbox'] {
+        margin: 5px 10px auto 6px; }
+      #order-detail ul .fp-info .control-box .fp-des {
+        position: relative;
+        top: -2px; }
+    #order-detail ul .create-fa {
+      background-color: #eee; }
+      #order-detail ul .create-fa .common {
+        font-size: 1.4rem;
+        font-weight: 400;
+        font-family: "Macrosoft YaHei";
+        min-height: 6rem; }
+      #order-detail ul .create-fa .fa-type {
+        width: 99%;
+        height: 3rem;
+        font-size: 1.3rem;
+        background-color: #fff;
+        border: 1px solid #cccccc;
+        margin-top: 0.6rem; }
+      #order-detail ul .create-fa .fp-taitou {
+        margin-top: 0.6rem;
+        height: 3rem;
+        font-size: 1.3rem;
+        width: 40%;
+        background-color: #fff;
+        border: 1px solid #cccccc; }
+      #order-detail ul .create-fa .tt-input {
+        margin-top: 0.6rem;
+        height: 3rem;
+        font-size: 1.3rem;
+        width: 50%;
+        background-color: #fff;
+        border: 1px solid #cccccc;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        -webkit-appearance: none; }
+    #order-detail ul .product-list {
+      padding-bottom: 1rem;
+      overflow: hidden; }
+      #order-detail ul .product-list .pro-table {
+        position: relative;
+        left: -0.8rem;
+        text-align: center;
+        margin-top: 0.8rem;
+        width: 104%; }
+        #order-detail ul .product-list .pro-table .tr-title {
+          background-color: #eee; }
+          #order-detail ul .product-list .pro-table .tr-title .pro-t {
+            padding: 5px; }
+        #order-detail ul .product-list .pro-table .pro {
+          border-right: 1px solid #eee;
+          border-bottom: 1px solid #eee;
+          padding: 1rem; }
+    #order-detail ul .leave-msg .msg-area {
+      width: 97%;
+      border: 1px solid #e7e7e7;
+      -webkit-appearance: none;
+      margin-top: 1rem; }
+
+#order-sum {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  font-family: "Macrosoft YaHei";
+  padding-top: 1.3rem; }
+  #order-sum #order-money {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #00b500; }
+  #order-sum .submit-order {
+    cursor: pointer;
+    float: right;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    background-color: #00b500;
+    margin-right: 1rem;
+    margin-top: -0.8rem;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */

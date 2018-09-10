@@ -207,5 +207,32 @@ define(function () {
                 $("#rabbit").hide();
                 $("#car-footer").show();
             }
+        },
+
+        reStoreAddress: function () {
+            $("input[name='address_options']",'.shdz').attr('checked','checked');
+            // 开始回填
+            var $box = $('#add-address-box');
+            $box.show();
+            // 获取姓名
+            var htmlText = $(this).html(),
+                name = /姓名:.*\/strong>(.+?)<\/d/g.exec(htmlText),
+                name = name[1];
+            // 获取省份
+            var sheng = /address-des">\n.*<div>(.+?)<\/div>/gm.exec(htmlText),
+                detail = sheng[1],
+                city = /(.+?)\s/.exec(detail),
+                city = city[1];
+            // 获取电话号码
+            var tel = /tel-num.*([\d]{11})/g.exec(htmlText),
+                tel = tel[1];
+            var aval = [name,detail,tel];
+            $box.find("input[type='text']").val(function (index,val) {
+                return aval[index];
+            });
+
+            if ($("select[name='sheng']").length > 0) {
+                new PCAS('sheng','shi','qu',city);
+            }
         }
     }});

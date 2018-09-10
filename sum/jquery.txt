@@ -7,7 +7,7 @@
 7.$("img").get(0);得到匹配的所有元素的第几个，$('img')[0]等价,如果没有输入index，即get()则返回包含所有匹配到的元素的数组
 8.$("li").index(DOM元素或jquery对象)返回其在原先集合li数组中的位置信息，如果index里面是$("li:gt(0)")数组，返回第一个元素在li数组中的位置，如果$("#bar").index('li')传递选择器，就返回#bar在所有li中的位置，找不到返回-1，如果不传递参数,$("#bar").index()，返回#bar在同辈中的索引位置
 9.$('div').data(key,anyTypeValue)在元素上存放数据，如果是集合就对所有元素存放，$(‘div’).data(key)获取，$('div').removeData(key)移除
-10.queue(),获取元素身上的函数队列，一般是动画，正因为queue才能保证函数一个个有序执行，通过queue(fx).lenght获取队列个数，执行一个就少一个，可以在队列末尾添加新函数，$(“#foo”).queue(function(){$$(this).dequeue();// 这个必须的，不然后面的函数不执行})//用dequeue来结束自定义队列函数，并让队列继续进行下去。clearQueue();清空所有队列。
+10.queue(),获取元素身上的函数队列，一般是动画，正因为queue才能保证函数一个个有序执行，通过queue(fx).lenght获取队列个数，执行一个就少一个，可以在队列末尾添加新函数，$(“#foo”).queue(function(){$(this).dequeue();// 这个必须的，不然后面的函数不执行})//用dequeue来结束自定义队列函数，并让队列继续进行下去。clearQueue();清空所有队列。
 11.:animated正在执行动画的，contains(text) has(selector)
 12.$('p').eq(index),获取第index个元素，负数就从最后一个(以-1)开始
 13.$('p').first();获取第一个元素 last(),最后一个
