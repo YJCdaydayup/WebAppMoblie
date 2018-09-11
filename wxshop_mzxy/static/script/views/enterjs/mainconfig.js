@@ -63,5 +63,12 @@ require(['jquery','swiper','commonObj','diqu'],function($,swiper,commonObj,diqu)
     }
     $('#addr-info').on('click','.bianji',commonObj.fnEditInfo);
 
+    // 删除
+    $('#addr-info').on('click','.shanchu',function () {
+        $(this).parents('li').remove();
+    });
+
+    // 保存地址
+    $('#save-addr').on('click',commonObj.saveAddress);
 
 });

@@ -253,5 +253,42 @@ define(function () {
             $('.add-detail input').val(citys[citys.length - 1]);
             $('.add-phone input').val($.trim(tel));
             new PCAS("add-sheng","add-city","add-qu",citys[0],citys[1],citys[2]);
+        },
+
+        /*
+         <li>
+         <div class="info-box">
+         <div class="name-info">
+         张三
+         <em>(13856888888)</em>
+         </div>
+         <div class="address-info">
+         <span>天津市</span>
+         <span>市辖县</span>
+         <span>静海县</span>
+         <span>未知村落</span>
+         </div>
+         </div>
+         <div class="add-control">
+         <div class="bianji">
+         <img src="images/edit.png" alt="">
+         编辑
+         </div>
+         <div class="shanchu">
+         <img src="images/del.png" alt="">
+         删除
+         </div>
+         </div>
+         </li>
+
+        * */
+        saveAddress: function () {
+            var ul = $("#add-ul");
+            // get(index)得到的是常规的DOM对象而非jquery对象，要变成jquery对象需要$()包装
+            var cloneLi = ul.children('li').get(0); // 单个就不能取lenght属性了
+            var newObj = $(cloneLi).clone();
+            // 改变指定内容
+            // newObj.find('')
+            // ul.append(newObj);
         }
     }});
