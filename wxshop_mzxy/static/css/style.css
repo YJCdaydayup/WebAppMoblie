@@ -1104,4 +1104,89 @@ footer {
     margin-top: -0.8rem;
     color: white; }
 
+/**
+<section id="userInfo">
+	<div class="info-header">
+		<div class="touxiang">
+			<img src="images/morenhead.jpg" alt="用户头像">
+		</div>
+		<div class="detail-info">
+			<ul>
+				<li>龙哥</li>
+				<li>姓名: 詹莎莎</li>
+				<li>手机: 15688888888</li>
+				<li>单位名称: 上海某公司</li>
+				<li>单位地址: 上海市虹口区临潼路</li>
+			</ul>
+		</div>
+	</div>
+	<div class="info-select">
+		<ul>
+			<li>收货地址</li>
+			<li>我的订单</li>
+			<li>切换账号</li>
+			<li>退出登录</li>
+		</ul>
+	</div>
+</section>
+*/
+.out-appearance, #userInfo .info-header, #userInfo .info-select {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 0 6px #eee;
+  box-shadow: 0 0 6px #ddd; }
+
+#userInfo {
+  position: relative;
+  top: 65px;
+  margin: auto 1rem; }
+  #userInfo .info-header {
+    overflow: hidden; }
+    #userInfo .info-header .touxiang {
+      width: 10rem;
+      height: 9.5rem;
+      padding: 5px 10px 5px 12px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      position: relative; }
+      #userInfo .info-header .touxiang img {
+        position: absolute;
+        width: 8.5rem;
+        height: auto; }
+    #userInfo .info-header .detail-info {
+      margin-left: 0.8rem;
+      margin-top: 3px;
+      height: 9.5rem; }
+      #userInfo .info-header .detail-info li {
+        font-size: 1.2rem;
+        font-family: "Macrosoft YaHei";
+        height: 20%;
+        line-height: 1.8rem; }
+      #userInfo .info-header .detail-info li:first-child {
+        color: peru;
+        font-weight: bold;
+        font-size: 1.5rem; }
+  #userInfo .info-select {
+    margin-top: 0.8rem; }
+    #userInfo .info-select li {
+      min-height: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-family: "Macrosoft YaHei";
+      font-weight: 500;
+      color: rgba(29, 29, 29, 0.6);
+      padding: 8px 2.5rem 8px 8px;
+      border-bottom: 1.2px solid rgba(29, 29, 29, 0.1);
+      margin-right: 1rem; }
+      #userInfo .info-select li img {
+        float: right;
+        width: 2rem;
+        margin-top: 9px;
+        margin-right: -24px; }
+    #userInfo .info-select li:last-child {
+      border: none; }
+
 /*# sourceMappingURL=style.css.map */
