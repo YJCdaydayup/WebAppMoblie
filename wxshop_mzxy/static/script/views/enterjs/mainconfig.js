@@ -57,6 +57,11 @@ require(['jquery','swiper','commonObj','diqu'],function($,swiper,commonObj,diqu)
     // 回填
     $('.shdz-detail').on('click',commonObj.reStoreAddress);
 
+    // 个人信息
+    if ($('.add-zone').length > 0) {
+        new PCAS("add-sheng","add-city","add-qu");
+    }
+    $('#addr-info').on('click','.bianji',commonObj.fnEditInfo);
 
 
 });

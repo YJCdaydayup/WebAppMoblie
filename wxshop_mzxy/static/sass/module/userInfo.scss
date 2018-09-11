@@ -1,32 +1,5 @@
 @charset "UTF-8";
 
-/**
-<section id="userInfo">
-	<div class="info-header">
-		<div class="touxiang">
-			<img src="images/morenhead.jpg" alt="用户头像">
-		</div>
-		<div class="detail-info">
-			<ul>
-				<li>龙哥</li>
-				<li>姓名: 詹莎莎</li>
-				<li>手机: 15688888888</li>
-				<li>单位名称: 上海某公司</li>
-				<li>单位地址: 上海市虹口区临潼路</li>
-			</ul>
-		</div>
-	</div>
-	<div class="info-select">
-		<ul>
-			<li>收货地址</li>
-			<li>我的订单</li>
-			<li>切换账号</li>
-			<li>退出登录</li>
-		</ul>
-	</div>
-</section>
-*/
-
 .out-appearance {
   background-color: #fff;
   border-radius: 1rem;
@@ -96,6 +69,96 @@
     }
     li:last-child {
       border: none;
+    }
+  }
+}
+
+.btn-gradient-color {
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#1aa818),color-stop(100%,#00b500));
+    background: -webkit-linear-gradient(top,#1aa818 0,#00b500 100%);
+    background: linear-gradient(to bottom,#1aa818 0,#00b500 100%);
+}
+
+.address-manager {
+  position: relative;
+  top: 65px;
+  margin: 0 1rem;
+  height: 200px;
+  .create-addr {
+    @extend .out-appearance;
+    padding: 1rem 0.8rem;
+    li {
+      min-height: 3rem;
+      margin-bottom: 0.9rem;
+      input {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 0.3rem;
+        text-align: left;
+      }
+      input::-webkit-input-placeholder {
+        color: gray;
+      }
+      input[type='button'] {
+        @extend .btn-gradient-color;
+        color: white;
+        font-size: 1.6rem;
+      }
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+    .add-zone {
+      select {
+        width: 30%;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+  .addr-info {
+    margin-top: 1rem;
+    background-color: #fff;
+    li {
+      border: 1px solid #eee;
+      margin-bottom: 0.8rem;
+      .info-box {
+        padding: 1.2rem;
+        border-bottom: 1px solid #eee;
+        font-size: 1.5rem;
+        .name-info {
+          margin-bottom: 2px;
+        }
+      }
+      .add-control {
+        overflow: hidden;
+        div {
+          float: left;
+          width: 50%;
+          text-align: center;
+          padding: 8px 0;
+          font-size: 1.3rem;
+          img {
+            width: 1.2rem;
+            height: auto;
+            position: relative;
+            top: 2px;
+            left: 2px;
+          }
+        }
+        .bianji {
+          background: url("../../images/edit.png");
+          background-size: contain;
+          border-right: 1px solid #eee;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+      }
     }
   }
 }

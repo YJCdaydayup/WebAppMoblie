@@ -234,5 +234,24 @@ define(function () {
             if ($("select[name='sheng']").length > 0) {
                 new PCAS('sheng','shi','qu',city);
             }
+        },
+
+        fnEditInfo: function () {
+            var parent = $(this).parents('li');
+            // 获取姓名
+            var htmlText = parent.html(),
+               name = /.*info">\n(.+?)\n/g.exec(htmlText),
+               name = name[1];
+            // 获取详细地址数组
+           var citys = parent.find('.address-info').find('span').map(function (t) {
+               return $(this).text();
+           }).get();
+            // 获取电话号码
+            var tel = /([\d]+)/i.exec(htmlText),
+                tel = tel[1];
+            $('.add-name input').val($.trim(name));
+            $('.add-detail input').val(citys[citys.length - 1]);
+            $('.add-phone input').val($.trim(tel));
+            new PCAS("add-sheng","add-city","add-qu",citys[0],citys[1],citys[2]);
         }
     }});

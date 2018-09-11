@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes"  />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no">
+	<title>移动端前端实训</title>
+	<link rel="apple-touch-icon-precomposed" href="images/haoroomsicon.jpg" />
+	<link rel="apple-touch-startup-image" href="images/haoroomsicon.jpg" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<nav id="nav">
+      <ul class="navlist">
+        <li id="n_0"><a href="index.html"><span class="active"></span></a></li>
+        <li id="n_1"><a href="usercenter.html" ><span></span></a></li>
+        <li id="n_2"><a href="info.html" ><span></span></a></li>
+        <li id="n_3"><a href="productlist.html" ><span></span></a></li>
+     </ul>
+</nav>
+<section id="address-manager" class="address-manager">
+	<div class="create-addr" id="create-addr">
+		<ul>
+			<li class="add-name">
+				<input type="text" placeholder="请填写真实姓名">
+			</li>
+			<li class="add-zone">
+				<select name="add-sheng" id="add-sheng"></select>
+				<select name="add-city" id="add-city"></select>
+				<select name="add-qu" id="add-qu"></select>
+			</li>
+			<li class="add-detail">
+				<input type="text" placeholder="详细地址(不必重复填写日期)">
+			</li>
+			<li class="add-phone">
+				<input type="text" placeholder="手机或者电话">
+			</li>
+			<li class="save-addr">
+				<input type="button" value="保存">
+			</li>
+		</ul>
+	</div>
+	<div class="addr-info" id="addr-info">
+		<ul>
+			<li>
+				<div class="info-box">
+					<div class="name-info">
+						张三
+						<em>(13888888888)</em>
+					</div>
+					<div class="address-info">
+						<span>天津市</span>
+						<span>市辖县</span>
+						<span>静海县</span>
+						<span>未知村落</span>
+					</div>
+				</div>
+				<div class="add-control">
+					<div class="bianji">
+						<img src="images/edit.png" alt="">
+						编辑
+					</div>
+					<div class="shanchu">
+						<img src="images/del.png" alt="">
+						删除
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="info-box">
+					<div class="name-info">
+						张三
+						<em>(13888888888)</em>
+					</div>
+					<div class="address-info">
+						<span>天津市</span>
+						<span>市辖县</span>
+						<span>静海县</span>
+						<span>未知村落</span>
+					</div>
+				</div>
+				<div class="add-control">
+					<div class="bianji">
+						<img src="images/edit.png" alt="">
+						编辑
+					</div>
+					<div class="shanchu">
+						<img src="images/del.png" alt="">
+						删除
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<script src="script/libs/require.js" data-main="script/views/enterjs/mainconfig"></script>
+</body>
+</html>
