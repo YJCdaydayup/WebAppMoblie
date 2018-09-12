@@ -1171,8 +1171,7 @@ footer {
 .address-manager {
   position: relative;
   top: 65px;
-  margin: 0 1rem;
-  height: 200px; }
+  margin: 0 1rem; }
   .address-manager .create-addr {
     padding: 1rem 0.8rem; }
     .address-manager .create-addr li {

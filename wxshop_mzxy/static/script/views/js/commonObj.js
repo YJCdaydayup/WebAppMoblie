@@ -240,7 +240,7 @@ define(function () {
             var parent = $(this).parents('li');
             // 获取姓名
             var htmlText = parent.html(),
-               name = /.*info">\n(.+?)\n/g.exec(htmlText),
+               name = /.*name-info">\n(.+?)\n/g.exec(htmlText),
                name = name[1];
             // 获取详细地址数组
            var citys = parent.find('.address-info').find('span').map(function (t) {
@@ -255,40 +255,54 @@ define(function () {
             new PCAS("add-sheng","add-city","add-qu",citys[0],citys[1],citys[2]);
         },
 
-        /*
-         <li>
-         <div class="info-box">
-         <div class="name-info">
-         张三
-         <em>(13856888888)</em>
-         </div>
-         <div class="address-info">
-         <span>天津市</span>
-         <span>市辖县</span>
-         <span>静海县</span>
-         <span>未知村落</span>
-         </div>
-         </div>
-         <div class="add-control">
-         <div class="bianji">
-         <img src="images/edit.png" alt="">
-         编辑
-         </div>
-         <div class="shanchu">
-         <img src="images/del.png" alt="">
-         删除
-         </div>
-         </div>
-         </li>
-
-        * */
         saveAddress: function () {
+            var cAddr = $("#create-addr");
+            // 正则判断
+            var name = cAddr.find('.add-name input').val(),
+                detailAddr = cAddr.find('.add-detail input').val(),
+                phoneNum = cAddr.find('.add-phone input').val(),
+                sheng = cAddr.find('.add-zone').children('select').map(function (t) {
+                    return $(this).find('option:selected').text();
+                }).get()[0];
+            if ($.trim(name) == "") {
+                alert('请填写姓名');
+                return;
+            }
+            if (/--/i.test(sheng)) {
+                alert('请选择地区');
+                return;
+            }
+            if ($.trim(detailAddr) == "") {
+                alert('请填写详细地址');
+                return;
+            }
+
+            // 027-3269210 0755-56757782123
+            if (!/^1[3|5|7|8][\d]{9}$|^[\d]{3,4}-[\d]+$/.test($.trim(phoneNum))) {
+                alert('请填写手机或座机号');
+                return;
+            }
+
             var ul = $("#add-ul");
             // get(index)得到的是常规的DOM对象而非jquery对象，要变成jquery对象需要$()包装
-            var cloneLi = ul.children('li').get(0); // 单个就不能取lenght属性了
+            var cloneLi = ul.children('li').get(0); // 单个就不能取length属性了
             var newObj = $(cloneLi).clone();
-            // 改变指定内容
-            // newObj.find('')
-            // ul.append(newObj);
+            // 获取name
+            newObj.find('.name-info').html("\n" + $(".add-name input").val() + "\n" +"<em>(" + $(".add-phone input").val()+ ")</em>");
+            // 获取地区
+            var zonelist = cAddr.find('.add-zone').children('select').map(function () {
+                // select的取值也可以按照正常的DOM取值来
+                return $(this).find('option:selected').text();
+            }).get();
+            zonelist.push(cAddr.find('.add-detail input').val());
+            newObj.find('.address-info').children('span').text(function (index, val) {
+                return zonelist[index];
+            });
+            ul.append(newObj);
+            // 置空
+            cAddr.find('.add-name input').val('');
+            cAddr.find('.add-detail input').val('');
+            cAddr.find('.add-phone input').val('');
+            new PCAS('add-sheng','add-city','add-qu',"","","");
         }
     }});
