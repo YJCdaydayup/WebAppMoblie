@@ -934,6 +934,12 @@ footer {
     margin-top: 1.2rem;
     outline: none; }
 
+strong {
+  color: red;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  font-family: "Macrosoft YaHei"; }
+
 .o-detail-title, #order-detail ul .li-common .shdz-title, #order-detail ul .fp-info .fp-title, #order-detail ul .product-list .product-des, #order-detail ul .leave-msg .msg-title {
   font-family: "Macrosoft YaHei";
   font-weight: bold;
@@ -1103,6 +1109,82 @@ footer {
     margin-right: 1rem;
     margin-top: -0.8rem;
     color: white; }
+
+.order-manager {
+  position: relative;
+  top: 50px;
+  width: 100%; }
+  .order-manager .info-img {
+    width: 100%;
+    height: 10rem;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0 #EC4B80), color-stop(100% #EF8E84));
+    background: -webkit-linear-gradient(top, #EC4B80 0, #EF8E84 100%);
+    background: linear-gradient(to bottom, #EC4B80 0, #EF8E84 100%); }
+    .order-manager .info-img img {
+      width: 6rem;
+      height: auto;
+      margin: 2.2rem auto auto 2rem;
+      border-radius: 3rem;
+      vertical-align: middle; }
+    .order-manager .info-img span {
+      font-size: 1.4rem;
+      color: white;
+      font-weight: bolder;
+      font-family: "Macrosoft YaHei";
+      margin-left: 1rem; }
+    .order-manager .info-img .order-title {
+      position: relative;
+      top: 2rem;
+      left: -3.6rem;
+      color: orange; }
+  .order-manager .order-state {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd; }
+    .order-manager .order-state li {
+      float: left;
+      width: 25%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-right: 1px solid #ddd;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 3; }
+  .order-manager .order-instruction {
+    margin: 1.2rem; }
+    .order-manager .order-instruction li {
+      border: 1px solid #eee;
+      -webkit-box-shadow: 0 0 5px #ddd;
+      -moz-box-shadow: 0 0 5px #ddd;
+      box-shadow: 0 0 5px #ddd;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background-color: #fff; }
+    .order-manager .order-instruction .order-info .title {
+      font-size: 1.6rem;
+      margin-bottom: 0.3rem; }
+    .order-manager .order-instruction .order-info table td {
+      padding: 0.4rem;
+      font-size: 1.4rem;
+      color: rgba(29, 29, 29, 0.6); }
+    .order-manager .order-instruction .order-list .pro-box {
+      min-height: 4.5rem;
+      border-bottom: 1px dotted #ccc;
+      overflow: hidden; }
+      .order-manager .order-instruction .order-list .pro-box img {
+        float: left;
+        width: 4rem; }
+      .order-manager .order-instruction .order-list .pro-box .pro-des {
+        float: left;
+        width: 50%;
+        width: calc(100% - 5rem);
+        margin-left: 1rem;
+        margin-top: 5px; }
+    .order-manager .order-instruction .order-list .type-des {
+      padding: 2rem 4rem; }
+      .order-manager .order-instruction .order-list .type-des div {
+        margin-bottom: 2rem; }
 
 .out-appearance, #userInfo .info-header, #userInfo .info-select, .address-manager .create-addr {
   background-color: #fff;
