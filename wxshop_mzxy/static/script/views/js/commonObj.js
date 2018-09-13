@@ -247,7 +247,7 @@ define(function () {
                return $(this).text();
            }).get();
             // 获取电话号码
-            var tel = /([\d]+)/i.exec(htmlText),
+            var tel = /\((.*)\)/i.exec(htmlText),
                 tel = tel[1];
             $('.add-name input').val($.trim(name));
             $('.add-detail input').val(citys[citys.length - 1]);

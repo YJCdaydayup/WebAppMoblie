@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes"  />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no">
+    <title>移动端前端实训</title>
+    <link rel="apple-touch-icon-precomposed" href="images/haoroomsicon.jpg" />
+    <link rel="apple-touch-startup-image" href="images/haoroomsicon.jpg" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .validform {
+            position: relative;
+            top: 60px;
+            margin-left: 2rem;
+        }
+
+        .validform li {
+            padding: 1.2rem 0;
+        }
+    </style>
+</head>
+<body>
+<nav id="nav">
+    <ul class="navlist">
+        <li id="n_0"><a href="index.html"><span class="active"></span></a></li>
+        <li id="n_1"><a href="usercenter.html"><span></span></a></li>
+        <li id="n_2"><a href="info.html"><span></span></a></li>
+        <li id="n_3"><a href="productlist.html"><span></span></a></li>
+    </ul>
+</nav>
+<section class="validform" id="validform">
+    <form class="registerform">
+        <ul>
+            <li>
+                 <!-- label也可以用于提供文字拼接的 -->
+                <label class="label"><span class="need">*</span> 中文名：</label>
+                <input type="text" value="" name="name" class="inputxt" tip="默认提示文字" altercss="gray" />
+            </li>
+            <li>
+                <label class="label"><span class="need">*</span> 密码：</label>
+                <input  tip="默认提示文字" altercss="gray"  type="password" value="" name="userpassword" class="inputxt" />
+            </li>
+            <li>
+                <label class="label"><span class="need">*</span> 确认密码：</label>
+                <input type="password" value="" name="userpassword2" class="inputxt" />
+            </li>
+            <li>
+                <label class="label"><span class="need">*</span> 所在城市：</label>
+                <select name="province" ><option value="">请选择城市</option><option value="1">瑞金市</option></select>
+            </li>
+            <li>
+                <label class="label"><span class="need">*</span> 性别：</label>
+                <input type="radio" value="1" name="gender" id="male" class="pr1" /><label for="male">男</label> <input type="radio" value="2" name="gender" id="female" class="pr1" /><label for="female">女</label>
+            </li>
+            <li>
+                <label class="label"><span class="need">*</span> 购物网：</label>
+                <input name="shoppingsite2" class="rt2" id="shoppingsite21" type="checkbox"  value="1" /><label for="shoppingsite21">新蛋</label>
+                <input name="shoppingsite2" class="rt2" id="shoppingsite22" type="checkbox"  value="2" /><label for="shoppingsite22">淘宝</label>
+                <input name="shoppingsite2" class="rt2" id="shoppingsite23" type="checkbox"  value="3" /><label for="shoppingsite23">京东</label>
+            </li>
+        </ul>
+        <div class="action">
+            <input type="submit" value="提 交" /> <input type="reset" value="重 置" />
+        </div>
+    </form>
+</section>
+
+<script type="text/javascript" src="script/libs/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="script/libs/Validform_v5.3.2_min.js"></script>
+
+<script>
+   var register = $('.registerform').Validform({
+       tiptype: 3,
+       label: ".label",
+       showAllError: false,
+       datatype: {
+           "zh1-6":/^[\u4E00-\u9FA5\uf900-\ufa2d]{1,6}$/
+       },
+       ajaxPost: true,
+       tipSweep: false,
+   });
+
+   // 输入框为空提示文字取值先后顺序
+   // 1.nullmsg="请填写用户名！" 当设置了nullmsg,为空时就报这个错误
+   // 2.当没有设置nullmsg,为空时就找最近的那个标签的内容作为提示
+
+   // 输入框检测错误时，文字的取值先后顺序
+   // 1.优先从errormsg里面取值
+   // 2.再从tipmsg找到规则的映射文案
+   // 3.系统的规则已经预设好了对应文案，自定义的也要设置好文案，如下，如果自定义的没有预设文案，就报默认文案:请输入正确信息！
+
+   // 后面是检测错误时报错内容
+//   register.tipmsg.w["zh1-6"] = "请输入1到6个中文字符";
+
+   // 添加规则
+    register.addRule([
+        {
+            ele: ".inputxt:eq(0)",
+            datatype: "zh1-6"
+        },
+        {
+            ele: ".inputxt:eq(1)",
+            datatype: "*6-20"
+        }
+
+    ])
+
+
+</script>
+
+</body>
+</html>

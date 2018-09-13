@@ -1,14 +1,16 @@
 require.config({
 	paths:{
-		jquery:"../../libs/jquery",
+		jquery:"../../libs/jquery-1.9.1.min",
 		swiper:"../../plugs/swiper.min",
         commonObj: "../js/commonObj",
-        diqu: "../../plugs/diqu2"
+        diqu: "../../plugs/diqu2",
 	}
 });
 
 // swiper依赖jquery，需要引进jquery
-require(['jquery','swiper','commonObj','diqu'],function($,swiper,commonObj,diqu){
+// 1. 这里的function后面的参数可以不写，引入模块了，就直接可以用，就像通过<script>标签引入模块一样
+// 2. 这里是入口，这里引入了，以后其他地方都可以使用
+require(['jquery','swiper','commonObj','diqu'],function() {
 	var topSlider=new Swiper('#topSlider', {
         slidesPerView: 1, // 一下滑一个
         centeredSlides: true, // 滑动到中间
@@ -52,7 +54,7 @@ require(['jquery','swiper','commonObj','diqu'],function($,swiper,commonObj,diqu)
         }else {
             $("#create-fa").hide();
         }
-    })
+    });
 
     // 回填
     $('.shdz-detail').on('click',commonObj.reStoreAddress);
