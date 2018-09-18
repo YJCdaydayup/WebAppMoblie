@@ -55,8 +55,8 @@
       <file leaf-file-name="validaform.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/validaform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="67" column="3" lean-forward="false" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+            <state relative-caret-position="168">
+              <caret line="75" column="1" lean-forward="false" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -354,12 +354,12 @@
       <workItem from="1536230685486" duration="515000" />
       <workItem from="1536471081459" duration="9701000" />
       <workItem from="1536547888065" duration="20769000" />
-      <workItem from="1536825616302" duration="8447000" />
+      <workItem from="1536825616302" duration="8499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52684000" />
+    <option name="totallyTimeSpent" value="52736000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -823,8 +823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/validaform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="67" column="3" lean-forward="false" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+        <state relative-caret-position="168">
+          <caret line="75" column="1" lean-forward="false" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
           <folding />
         </state>
       </provider>

@@ -1387,4 +1387,88 @@ strong {
   border-top: none;
   text-align: left; }
 
+.text-setting, .login-header .login-title, .login-header .register-title, .login .login-button, .login .register-exp {
+  font-size: 1.7rem;
+  font-family: "Macrosoft YaHei";
+  font-weight: 400; }
+
+.login-header {
+  width: 100%;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, red), color-stop(100%, green));
+  background: -webkit-linear-gradient(top, red 0%, green 100%);
+  background: linear-gradient(to bottom, #eee 0%, #eee 100%);
+  text-align: center;
+  padding-top: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .login-header .back-btn {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    float: left;
+    margin-left: 10px; }
+    .login-header .back-btn img {
+      width: 100%;
+      height: auto; }
+  .login-header .login-title {
+    display: inline-block; }
+  .login-header .register-title {
+    float: right;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer; }
+
+.login-box {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+  .login-box div {
+    background-color: #fff;
+    min-height: 5rem;
+    line-height: 5rem;
+    padding-left: 1rem; }
+    .login-box div img {
+      width: 1.8rem;
+      height: auto;
+      vertical-align: middle; }
+    .login-box div input {
+      width: 80%;
+      width: calc(100% - 5rem);
+      height: 3rem;
+      margin-left: 1rem;
+      position: relative;
+      top: 3px;
+      padding-left: 10px;
+      font-size: 1.4rem; }
+
+.login {
+  margin-top: 2rem;
+  padding: 0 10px;
+  color: gray;
+  cursor: pointer; }
+  .login .login-button {
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #00b500;
+    height: 3.6rem;
+    color: white;
+    line-height: 3.6rem;
+    text-align: center;
+    border-radius: 0.5rem; }
+  .login .register-exp {
+    margin-top: 10px;
+    padding: 1.5rem 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #1aa818; }
+
 /*# sourceMappingURL=style.css.map */
